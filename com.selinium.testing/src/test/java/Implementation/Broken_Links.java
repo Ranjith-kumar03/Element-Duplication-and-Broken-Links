@@ -13,8 +13,8 @@ import cucumber.api.java.en.Then;
 
 public class Broken_Links {
 	
-	@Then("^check for broken link$")
-	public void check_for_broken_link() throws Throwable {
+	@Then("^check for broken links$")
+	public void check_for_broken_links() throws Throwable {
 		
 		Selinium_Testing.obj= Selinium_Testing.driver.findElements(By.xpath("//*[@href]"));
 		

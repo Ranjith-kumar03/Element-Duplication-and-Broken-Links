@@ -4,9 +4,9 @@ Feature: Selinium Learning
  
 
   Scenario Outline: Check Duplicate and Hidden Elements
-  Given Kndly open the site "<website>"
-    Then find elements in pages
-    Then close the driver
+  Given Kndly open the sites "<website>"
+    Then find elements in page
+    Then close the webdriver
 
  
 
@@ -19,9 +19,9 @@ Feature: Selinium Learning
  
 
   Scenario Outline: Check Broken Links
-  Given Kndly open the site "<website>"
-    Then check for broken link
-    Then close the driver
+  Given Kndly open the sites "<website>"
+    Then check for broken links
+    Then close the webdriver
 
  
 

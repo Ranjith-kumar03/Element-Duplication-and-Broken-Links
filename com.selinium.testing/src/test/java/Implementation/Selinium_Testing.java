@@ -17,8 +17,8 @@ public class Selinium_Testing {
 	public  WebElement element;
 	static int i=0;
 	static int j=0;
-	@Given("^Kndly open the site \"([^\"]*)\"$")
-	public void kndly_open_the_site(String website) throws Throwable {
+	@Given("^Kndly open the sites \"([^\"]*)\"$")
+	public void kndly_open_the_sites(String website) throws Throwable {
 	   
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Ranjith\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		driver =new ChromeDriver();
@@ -28,13 +28,13 @@ public class Selinium_Testing {
 	
 
 
-	@Then("^close the driver$")
-	public void close_the_driver() throws Throwable {
+	@Then("^close the webdriver$")
+	public void close_the_webdriver() throws Throwable {
 	    driver.quit();
 	}
 
-	@Then("^find elements in pages$")
-	public void findElementsInPages() throws Throwable {
+	@Then("^find elements in page$")
+	public void find_elements_in_page() throws Throwable {
 		obj=driver.findElements(By.xpath("//input[@type='submit']"));
 
 		System.out.println("Number ofelements is--"+obj.size());
