@@ -3,7 +3,7 @@ Feature: Selinium Learning
 
  
 
-  Scenario Outline: Check Duplicate and Hidden Elements
+  Scenario Outline: Check Duplicate and Hidden Elements 
   Given Kndly open the sites "<website>"
     Then find elements in page
     Then close the webdriver
